@@ -4,15 +4,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
   },
   "dependencies": {
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.3.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
+    "vitepress": "^0.20.1",
     "vue-tsc": "^0.3.0"
   }
 }

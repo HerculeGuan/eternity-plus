@@ -1,6 +1,6 @@
 // const path = require("path");
 module.exports = {
-  base: "/",
+  base: "/eternity-plus/",
   title: "Eternity Plus",
   description: "Vue UI 组件库",
 
@@ -31,7 +31,6 @@ module.exports = {
         ],
       },
     ],
-    smoothScroll: true,
     lastUpdated: "最后更新时间", // string | boolean
   },
 };

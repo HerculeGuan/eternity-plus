@@ -1,7 +1,6 @@
 <template>
   <div class="icon-demos">
     <div class="code-example">
-      <h3>基础用法</h3>
       <div class="example">
         <et-icon name="setting"></et-icon>
       </div>
@@ -11,21 +10,23 @@
 </template>
 
 <script>
-import Icon from "../../../src/components/Icon/icon.vue"
+import EtIcon from "../../../src/components/Icon/icon.vue";
 import CodeWrap from "../utils/code-wrap.vue";
 import "../style/common.scss";
 
 export default {
   components: {
-    "et-icon": Icon,
-    "code-wrap": CodeWrap,
+    EtIcon,
+    CodeWrap,
   },
-  data() {
-    return {
-      content: `
+  setup() {
+    const content = `
     <et-icon name="setting"></et-icon>
-    `,
-      tips: "使用<code>name</code>来设置图标",
+    `;
+    const tips = "使用<code>name</code>来设置图标";
+    return {
+      content,
+      tips,
     };
   },
 };

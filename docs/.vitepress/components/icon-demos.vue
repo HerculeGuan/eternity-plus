@@ -3,7 +3,7 @@
     <div class="code-example">
       <h3>基础用法</h3>
       <div class="example">
-        <!-- <et-icon name="setting"></et-icon> -->
+        <et-icon name="setting"></et-icon>
       </div>
       <code-wrap :code="content" :tips="tips"></code-wrap>
     </div>
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-// import Icon from "../../../src/components/Icon/icon";
+import Icon from "../../../src/components/Icon/icon.vue"
 import CodeWrap from "../utils/code-wrap.vue";
 import "../style/common.scss";
 
 export default {
   components: {
-    // "et-icon": Icon,
+    "et-icon": Icon,
     "code-wrap": CodeWrap,
   },
   data() {

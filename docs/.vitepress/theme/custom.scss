@@ -1,0 +1,27 @@
+.container {
+  max-width: 80rem !important;
+  .content {
+    table {
+      border: 1px solid #ebebeb;
+      font-size: 14px;
+      display: table;
+      width: 100%;
+      th,
+      tr,
+      td {
+        border: none;
+        padding: 12px 0;
+      }
+      thead {
+        background: #f5f5f5;
+        border: 1px solid #ebebeb;
+      }
+      tbody tr:hover {
+        background: #fafafa;
+      }
+      tbody tr {
+        background: #ffffff;
+      }
+    }
+  }
+}

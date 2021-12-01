@@ -4,15 +4,15 @@
 
 <script lang='ts'>
 import "../../svg";
-
 import { defineComponent } from "@vue/runtime-core";
-
 export default defineComponent({
   name: "EtIcon",
   props: {
     name: {
       type: String,
     },
+  },
+  created() {
   },
 });
 </script>

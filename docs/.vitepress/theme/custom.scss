@@ -1,6 +1,7 @@
 .container {
   max-width: 80rem !important;
   .content {
+    min-height: calc(100vh - 260px);
     table {
       border: 1px solid #ebebeb;
       font-size: 14px;

@@ -2,13 +2,13 @@
 title: Icon 图标
 ---
 
-# Icon 图标
-
-### 基础用法
-
 <script setup>
 import IconDemos from '../.vitepress/components/icon-demos.vue'
 </script>
+
+# Icon 图标
+
+### 基础用法
 
 <ClientOnly>
 <icon-demos/>

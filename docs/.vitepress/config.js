@@ -2,8 +2,7 @@
 module.exports = {
   base: "/eternity-plus/",
   title: "Eternity Plus",
-  description: "Vue UI 组件库",
-
+  description: "Vue3 UI 组件库",
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },

@@ -14,12 +14,6 @@ module.exports = {
         text: "开发指南",
         link: "/install/",
       },
-
-      //   {
-      //     text: "开发指南",
-      //     link: ["/install/"],
-      //     // collapsable: false,
-      //   },
       {
         text: "组件",
         children: [
@@ -27,7 +21,10 @@ module.exports = {
             text: "Icon 图标",
             link: "/components/icon",
           },
-
+          {
+            text: "Button 按钮",
+            link: "/components/button",
+          },
         ],
       },
     ],

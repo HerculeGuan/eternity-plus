@@ -1,8 +1,8 @@
 <template>
-  <div></div>
+  <div>ss</div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   setup() {
     return {};
@@ -10,4 +10,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

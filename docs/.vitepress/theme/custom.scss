@@ -1,6 +1,7 @@
 .container {
   max-width: 80rem !important;
   .content {
+    padding: 0 20px;
     min-height: calc(100vh - 260px);
     table {
       border: 1px solid #ebebeb;
@@ -22,7 +23,11 @@
       }
       tbody tr {
         background: #ffffff;
+        border: 1px dashed #ebebeb;
       }
     }
+  }
+  .last-updated {
+    font-size: 15px;
   }
 }

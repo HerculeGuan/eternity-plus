@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../var";
 
 .et-button {
   font-size: $font-size;

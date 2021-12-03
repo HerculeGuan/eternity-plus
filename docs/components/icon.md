@@ -2,17 +2,19 @@
 title: Icon 图标
 ---
 
-<script setup>
-import IconDemos from '../.vitepress/components/icon-demos.vue'
-</script>
-
 # Icon 图标
 
 ### 基础用法
 
-<ClientOnly>
-<icon-demos/>
-</ClientOnly>
+:::demo 使用`name`来设置图标
+
+```vue
+<template>
+  <et-icon name="setting"></et-icon>
+</template>
+```
+
+:::
 
 ### Attributes
 

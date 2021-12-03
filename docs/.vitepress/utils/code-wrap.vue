@@ -9,10 +9,7 @@
 
 <script>
 import hljs from "highlight.js";
-// import "highlight.js/styles/qtcreator_light.css";
-// import "highlight.js/styles/kimbie.light.css";
-// import "highlight.js/styles/atelier-seaside-light.css";
-// import "highlight.js/styles/gradient-light.css";
+import "highlight.js/styles/dark.css";
 
 export default {
   name: "CodeWrap",
@@ -29,9 +26,6 @@ export default {
     formatCode() {
       return this.code.replace(/^ {4}/gm, "").trim();
     },
-  },
-  data() {
-    return {};
   },
   directives: {
     highlight: {

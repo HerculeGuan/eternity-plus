@@ -23,10 +23,18 @@ module.exports = {
           {
             text: "Button 按钮",
             link: "/components/button",
-          },
+          }
         ],
       },
     ],
     lastUpdated: "最后更新时间", // string | boolean
+  },
+  markdown: {
+    config: (md) => {
+      const { demoBlockPlugin } = require("vitepress-theme-demoblock");
+      md.use(demoBlockPlugin, {
+        cssPreprocessor: "scss",
+      });
+    },
   },
 };

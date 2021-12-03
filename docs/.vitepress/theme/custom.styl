@@ -8,9 +8,9 @@
   // 主色
   --color-main var(--c-brand)
   // 底部栏色调
-  --color-border #4dd0e1
+  --color-border rgba(51, 63, 133, 0.616)
   // 引用字体色
-  --color-block #4dd0e1
+  --color-block rgba(51, 63, 133, 0.616)
   // 加粗色调
   --color-strong var(--c-code)
   // 代码样式
@@ -76,20 +76,7 @@ p.description{
     li
       list-style: circle
 
-// .container pre, .container pre>code.hljs{
-//   background: #fefefe;
-//   color: #545454;
-// }
 
-// .container pre:before{
-//   content: "";
-//   display: block;
-//   height: 40px;
-//   width: 100%;
-//   background url("/md.png") 0 0 no-repeat
-//   margin-bottom: -7px;
-//   background-size: 40px;
-// }
 
 
 .container .octicon {
@@ -186,24 +173,6 @@ p.description{
 .container img {
   border-style: none;
 }
-
-// .container code,
-// .container kbd,
-// .container pre {
-//   font-family: monospace,monospace;
-//   font-size: 1em;
-// }
-
-// .container pre {
-//   line-height 15px
-//   box-shadow: 0 0 8px hsla(0,0%,43.1%,.45);
-//   border-radius: 4px;
-//   padding: 16px;
-//   overflow: auto;
-//   font-size: 18px;
-//   letter-spacing 1px
-//   background-color: #ffffff;
-// }
 
 .container hr {
   box-sizing: initial;
@@ -336,9 +305,9 @@ p.description{
   line-height: 1.45;
 }
 
-.container h2 {
+.container h3 {
   font-size: 24px;
-  border-bottom 4px solid var(--color-border)
+  border-bottom 2px solid var(--color-border)
   position relative
   line-height 50px
   @media (max-width: 768px){
@@ -369,8 +338,8 @@ p.description{
     position absolute
     right: 0;
     bottom 0
-    width: 400px;
-    height: 10px;
+    width: 80%;
+    height: 8px;
     border-top-right-radius: 24px;
     background: linear-gradient(90deg,#fff,var(--color-main));
     max-width: 50vw;
@@ -454,17 +423,6 @@ p.description{
 .container dd {
   margin-left: 0;
 }
-
-// .container code,
-// .container pre {
-//   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-//   font-size: 12px;
-// }
-
-// .container pre {
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
 
 .container input::-webkit-inner-spin-button,
 .container input::-webkit-outer-spin-button {
@@ -809,18 +767,6 @@ p.description{
   text-decoration: none;
 }
 
-// .container blockquote,
-// .container details,
-// .container dl,
-// .container ol,
-// .container p,
-// .container pre,
-// .container table,
-// .container ul {
-//   margin-top: 0;
-//   margin-bottom: 16px;
-// }
-
 .container hr {
   height: .25em;
   padding: 0;
@@ -929,54 +875,24 @@ p.description{
   margin: 0;
   font-size: 85%;
   border-radius: 3px;
-  background: var(--color-code-bg);
   color: var(--color-code);
 }
 
-// .container pre {
-//   word-wrap: normal;
-// }
+.container pre {
+  word-wrap: normal;
+}
 
-// .container pre>code {
-//   padding: 0;
-//   margin: 0;
-//   font-size: 100%;
-//   word-break: normal;
-//   white-space: pre;
-//   background: transparent;
-//   border: 0;
-// }
-
-// .container .highlight {
-//   margin-bottom: 16px;
-// }
-
-// .container .highlight pre {
-//   margin-bottom: 0;
-//   word-break: normal;
-// }
-
-// .container .highlight pre{
-//   padding: 16px;
-//   overflow: auto;
-//   font-size: 85%;
-//   line-height: 1.45;
-
-//   background-color: #f6f8fa;
-//   border-radius: 3px;
-// }
-
-// .container pre code {
-//   display: inline;
-//   max-width: auto;
-//   padding: 0;
-//   margin: 0;
-//   overflow: visible;
-//   line-height: inherit;
-//   word-wrap: normal;
-//   background-color: initial;
-//   border: 0;
-// }
+.container pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
 
 .container .commit-tease-sha {
   display: inline-block;
@@ -1122,9 +1038,7 @@ p.description{
   margin: 0 .2em .25em -1.6em;
   vertical-align: middle;
 }
-// .container pre{
-//   background-color var(--code-bg-color)
-// }
+
 h3:not(h2 + h3){
   border-top: 2px dashed #d6d6d6;
   padding-top: 1.5rem;

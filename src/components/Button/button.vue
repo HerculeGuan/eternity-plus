@@ -1,12 +1,20 @@
 <template>
   <button
     class="et-button"
-    :class="[`icon-${iconPosition}`, { [`bg-${type}`]: type }]"
+    :class="[`et-button__icon-${iconPosition}`, { [`et-button__bg-${type}`]: type }]"
     @click="$emit('click')"
   >
-    <et-icon class="loading icon" v-if="loading" name="loading"></et-icon>
-    <et-icon class="icon" v-if="icon && !loading" :name="icon"></et-icon>
-    <div class="content">
+    <et-icon
+      class="et-button__loading et-button__icon"
+      v-if="loading"
+      name="loading"
+    ></et-icon>
+    <et-icon
+      class="et-button__icon"
+      v-if="icon && !loading"
+      :name="icon"
+    ></et-icon>
+    <div class="et-button__content">
       <slot></slot>
     </div>
   </button>
@@ -71,24 +79,24 @@ export default {
     outline: none;
   }
 
-  > .content {
+  > &__content {
     order: 2;
   }
-  > .icon {
+  > &__icon {
     order: 1;
     margin-right: 0.2em;
   }
-  &.icon-right {
-    > .icon {
+  &__icon-right {
+    > .et-button__icon {
       order: 2;
       margin-right: 0;
       margin-left: 0.2em;
     }
-    > .content {
+    > .et-button__content {
       order: 1;
     }
   }
-  .loading {
+  &__loading {
     animation: spin 1s infinite linear;
     margin-right: 0.2em;
   }
@@ -98,7 +106,7 @@ export default {
   }
   $buttonType: primary, success, warning, danger;
   @each $c in $buttonType {
-    &.bg-#{$c} {
+    &__bg-#{$c} {
       border: none;
       color: #fff;
       font-weight: 500;
@@ -111,16 +119,16 @@ export default {
       }
     }
   }
-  &.bg-primary {
+  &__bg-primary {
     background-color: $primary-color;
   }
-  &.bg-success {
+  &__bg-success {
     background-color: $success-color;
   }
-  &.bg-warning {
+  &__bg-warning {
     background-color: $warning-color;
   }
-  &.bg-danger {
+  &__bg-danger {
     background-color: $danger-color;
   }
 }

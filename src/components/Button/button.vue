@@ -1,7 +1,11 @@
 <template>
   <button
     class="et-button"
-    :class="[`et-button__icon-${iconPosition}`, { [`et-button__bg-${type}`]: type }]"
+    :class="[
+      `et-button__icon-${iconPosition}`,
+      { [`et-button__bg-${type}`]: type },
+      { 'et-button__round': round },
+    ]"
     @click="$emit('click')"
   >
     <et-icon
@@ -35,6 +39,10 @@ export default {
       validator(value: string) {
         return value === "left" || value === "right";
       },
+    },
+    round: {
+      type: Boolean,
+      default: false,
     },
     loading: {
       type: Boolean,
@@ -72,17 +80,15 @@ export default {
   &:hover {
     border-color: $border-color-hover;
   }
-  &:active {
-    background: $button-active-bg;
-  }
+
   &:focus {
     outline: none;
   }
 
-  > &__content {
+  &__content {
     order: 2;
   }
-  > &__icon {
+  &__icon {
     order: 1;
     margin-right: 0.2em;
   }
@@ -95,6 +101,9 @@ export default {
     > .et-button__content {
       order: 1;
     }
+  }
+  &__round {
+    border-radius: 16px;
   }
   &__loading {
     animation: spin 1s infinite linear;
@@ -113,6 +122,9 @@ export default {
       &:hover,
       &:disabled {
         opacity: 0.8;
+      }
+      &:active {
+        opacity: 1;
       }
       > svg {
         fill: #fff;

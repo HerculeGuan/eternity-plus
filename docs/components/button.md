@@ -88,6 +88,24 @@ title: Button 按钮
 
 :::
 
+<!-- ### 按钮组
+
+:::demo 使用`button-group`标签
+
+```vue
+<template>
+  <div>
+    <et-button-group>
+      <et-button icon="left">上一页</et-button>
+      <et-button>更多</et-button>
+      <et-button icon="right" icon-position="right">下一页</et-button>
+    </et-button-group>
+  </div>
+</template>
+```
+
+::: -->
+
 ### Attributes
 
 |     参数     |  类型   | 默认值  |                 可选值                 |     说明     |

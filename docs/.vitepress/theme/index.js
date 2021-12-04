@@ -8,6 +8,7 @@ import "./index.scss";
 
 import Icon from "../../../src/components/Icon/icon.vue";
 import Button from "../../../src/components/Button/button.vue";
+import ButtonGroup from "../../../src/components/Button/button-group.vue";
 
 export default {
   ...theme,
@@ -16,6 +17,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component(Icon.name, Icon);
     app.component(Button.name, Button);
+    app.component(ButtonGroup.name, ButtonGroup);
     registerComponents(app);
   },
 };

@@ -1,12 +1,6 @@
-<template>
-  <svg class="et-icon" :style="sizeClass">
-    <use :xlink:href="`#i-${name}`"></use>
-  </svg>
-</template>
-
-<script lang="ts">
 import "../../svg";
 import { computed, defineComponent, toRefs } from "@vue/runtime-core";
+
 export default defineComponent({
   name: "EtIcon",
   props: {
@@ -32,6 +26,12 @@ export default defineComponent({
     });
     return { sizeClass };
   },
+  render() {
+    const xxx = (
+      <svg class="et-icon" style={this.sizeClass}>
+        <use xlinkHref={`#i-${this.$props.name}`}></use>
+      </svg>
+    );
+    return xxx;
+  },
 });
-</script>
-

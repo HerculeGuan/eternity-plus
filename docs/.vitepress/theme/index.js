@@ -6,7 +6,7 @@ import "./custom.styl";
 import "./custom.scss";
 import "./index.scss";
 
-import Icon from "../../../src/components/Icon/icon.vue";
+import Icon from "../../../src/components/Icon/icon.tsx";
 import Button from "../../../src/components/Button/button.vue";
 import ButtonGroup from "../../../src/components/Button/button-group.vue";
 

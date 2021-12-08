@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import Icon from "../Icon/icon.vue";
+import Icon from "../Icon/icon";
 
 export default {
   name: "EtButton",

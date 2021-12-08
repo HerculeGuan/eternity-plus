@@ -1,7 +1,6 @@
 ---
 home: true
 
-# heroImage: /hero.png
 heroText: Eternity Plus
 tagline: 实用的 Vue3 UI 组件库（持续更新中）
 actionText: 快速上手 →

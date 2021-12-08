@@ -5,6 +5,15 @@ module.exports = {
   base: "/eternity-plus/",
   title: "Eternity Plus",
   description: "Vue3 UI 组件库",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/image/eternity.png",
+      },
+    ],
+  ],
   themeConfig: {
     nav,
     sidebar,

@@ -7,7 +7,7 @@ import "./custom.scss";
 import "./index.scss";
 
 import Icon from "../../../src/components/Icon/icon.tsx";
-import Button from "../../../src/components/Button/button.vue";
+import Button from "../../../src/components/Button/button.tsx";
 import ButtonGroup from "../../../src/components/Button/button-group.vue";
 
 export default {

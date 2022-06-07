@@ -1,67 +1,3 @@
-<template>
-  <button
-    class="et-button"
-    :class="[
-      `et-button__icon-${iconPosition}`,
-      { [`et-button__bg-${type}`]: type },
-      { 'et-button__round': round },
-    ]"
-    @click="$emit('click')"
-  >
-    <et-icon
-      class="et-button__loading et-button__icon"
-      v-if="loading"
-      name="loading"
-    ></et-icon>
-    <et-icon
-      class="et-button__icon"
-      v-if="icon && !loading"
-      :name="icon"
-    ></et-icon>
-    <div class="et-button__content">
-      <slot></slot>
-    </div>
-  </button>
-</template>
-
-<script lang="ts">
-import Icon from "../Icon/icon";
-
-export default {
-  name: "EtButton",
-  props: {
-    icon: {
-      type: String,
-    },
-    iconPosition: {
-      type: String,
-      default: "left",
-      validator(value: string) {
-        return value === "left" || value === "right";
-      },
-    },
-    round: {
-      type: Boolean,
-      default: false,
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-    type: {
-      type: String,
-      validator(value: string) {
-        return ["primary", "success", "warning", "danger"].indexOf(value) >= 0;
-      },
-    },
-  },
-  components: {
-    "et-icon": Icon,
-  },
-};
-</script>
-
-<style lang="scss" scoped>
 @import "../var";
 
 .et-button {
@@ -144,5 +80,3 @@ export default {
     background-color: $danger-color;
   }
 }
-</style>
-

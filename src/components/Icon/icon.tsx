@@ -1,20 +1,11 @@
 import "../../svg";
 import { computed, defineComponent, toRefs } from "@vue/runtime-core";
+import iconProps from "./icon";
 
-export default defineComponent({
+const Button = defineComponent({
   name: "EtIcon",
-  props: {
-    name: {
-      type: String,
-    },
-    size: {
-      type: [Number, String],
-      default: 16,
-    },
-    color: {
-      type: String,
-    },
-  },
+  props: iconProps,
+
   setup(props) {
     const { size, color } = toRefs(props);
     const sizeClass = computed(() => {
@@ -26,12 +17,14 @@ export default defineComponent({
     });
     return { sizeClass };
   },
+
   render() {
-    const xxx = (
+    return (
       <svg class="et-icon" style={this.sizeClass}>
         <use xlinkHref={`#i-${this.$props.name}`}></use>
       </svg>
     );
-    return xxx;
   },
 });
+
+export default Button;

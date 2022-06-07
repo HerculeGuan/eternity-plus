@@ -1,5 +1,4 @@
 import { computed, defineComponent } from "vue";
-import Icon from "../Icon/icon";
 import "./button.scss";
 
 const buttonProps = {

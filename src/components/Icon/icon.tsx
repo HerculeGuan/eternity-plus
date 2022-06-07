@@ -1,8 +1,20 @@
 import "../../svg";
-import { computed, defineComponent, toRefs } from "@vue/runtime-core";
-import iconProps from "./icon";
+import { computed, defineComponent, toRefs } from "vue";
 
-const Button = defineComponent({
+const iconProps = {
+  name: {
+    type: String,
+  },
+  size: {
+    type: [Number, String],
+    default: 16,
+  },
+  color: {
+    type: String,
+  },
+};
+
+const Icon = defineComponent({
   name: "EtIcon",
   props: iconProps,
 
@@ -27,4 +39,4 @@ const Button = defineComponent({
   },
 });
 
-export default Button;
+export default Icon;
